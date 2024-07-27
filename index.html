@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Soka Student Sato">
+    <meta name="keywords" content="html, css, javascript, jQuery">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>最終課題_コンピュータリテラシーII</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <div id="header-container">
+            <header>
+                <nav>
+
+                    <a href="index.html" id="main-title">創価大学コンピュータリテラシーII最終課題</a>
+                    <ul>
+                        <li id="li-1">
+                            <a href="./index.html" id="ti">HOME</a>
+                            <a href="./a.html" class="ti">-A-</a>
+                            <a href="./b.html" class="ti">-B-</a>
+                            <a href="./index.html" class="unfind">関連項目</a>
+                            <a href="./index.html" class="unfind">問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div id="main-container">
+            <main>
+                <section>
+                    <h1>筆者紹介</h1>
+                    <p>法学部で法曹コース</p>
+                    <p>[趣味] 料理(鶏の卵を使うのが好き)、アニメ鑑賞(2000年以降)、ゲーム(FPS・街づくり・Blender3Dモデル)、筋トレ、医学部受験勉強、医事法、法医学(論文閲読)、画像AI生成(Novel,stable diffusion)-adobe フォトショップ-、金商法、不動産業の実務への準備</p>
+                    <p>[苦手] たくさんあるよ沢山、克服したいものも、苦手でいたいものも(幽霊 : びびる楽しみが減るから)</p>
+                </section>
+                <section>
+                    <h1>コンピューターリテラシーIIの振り返り</h1>
+                    <dl>
+                        <dt>[コンピューターリテラシーII]</dt>
+                        <dd>創価大学で初学者向けのweb制作の一部を体験する講義。内容はHTML, CSS,
+                            javascriptを活用し、このような課題を作成するため、3限目は実質的にはオンラインという謎(暑い夏場の学生諸君にとっては神)講義である。</dd>
+                        <br>
+                        <dt>[本講義の講師]</dt>
+                        <dd>他大学の講師でもある講師で、学位は博士であり、助教授経験のある者である(誤情報発信の危険性等を包含するため、抽象的に講師説明を記述する)。</dd>
+                    </dl>
+                    <div>
+                        <h2>受講するキッカケ</h2>
+                        <ul>
+                            <li>残りのデータサイエンス必須科目潰し(必修単位残しのデバフで精神崩壊予防)</li>
+                            <li>浪人友人の入学先大学が上記の「他大学」(謎の親近感)</li>
+                            <li>PC操作5,6年目でjavaプラグイン(制作チームのアイデア担当)以外でも何かやってみたい気分</li>
+                            <li>司法試験勉強による疲労回復(PCゲームっぽい事したい)</li>
+                        </ul>
+                        <p>コンピュータリテラシー以外にもデータサイエンス科目はあるが、情報処理系に興味を惹かれ、のうのうと受講した。</p>
+                    </div>
+                    <div>
+                        <h2>受講後の感想</h2>
+                        <ul>
+                            <li>自主学習が楽しかった</li>
+                            <li>PC操作でメンタルヘルスは保たれた。</li>
+                            <li>数学IIIまで復習するキッカケになった(要因は謎-自身の心情も不明)</li>
+                            <li>講義時間が適切であった(他講義の無駄に長々しい講義と比較しても尚[内容==時間])</li>
+                            <li>楽しかった(総合)</li>
+                        </ul>
+                        <p>上記の要件から広義の満足度は他の科目と比べて満足度は高い。一番高かったのは「労働法」ですが、同価値性は高い。(在学現在まで、極端に満足度が低い科目講義には遭遇していない)</p>
+                    </div>
+                </section>
+                <section>
+                    <h1>本課題の概要</h1>
+                    <div class="buttons">
+                        <p>大きく2分する科目群を<a href="#aside-subject"
+                                id="zoomButton">科目変更</a>に載せた。しかし、本課題の趣旨たるものは各ページの内容では無いと推定し、ナイヨウ(内容)がナイヨ〜状態であることは筆者も残念である箇所である。
+                        </p>
+                    </div>
+                    <p>念の為、図で簡潔に表すと以下のようになる。</p>
+                    <div class="table-container">
+                        <table>
+                            <caption>司法試験予備試験</caption>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>上3法</th>
+                                    <th>下4法</th>
+                                    <th>下4法</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>民事系</th>
+                                    <td>民法</td>
+                                    <td>商法</td>
+                                    <td>民訴法</td>
+                                </tr>
+                                <tr>
+                                    <th>公法系</th>
+                                    <td>憲法</td>
+                                    <td>行政法</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>刑事系</th>
+                                    <td>刑法</td>
+                                    <td>刑訴法</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>選択式</th>
+                                    <td></td>
+                                    <td>労働</td>
+                                    <td>一般教養</td>
+                                </tr>
+                                <tr>
+                                    <th>実務基礎</th>
+                                    <td>民事</td>
+                                    <td>刑事</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                
+                        <table>
+                            <caption>司法試験</caption>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>上3法</th>
+                                    <th>下4法</th>
+                                    <th>下4法</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>選択科目</th>
+                                    <td></td>
+                                    <td>労働</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>民事系</th>
+                                    <td>民法</td>
+                                    <td>商法</td>
+                                    <td>民訴法</td>
+                                </tr>
+                                <tr>
+                                    <th>公法系</th>
+                                    <td>憲法</td>
+                                    <td>行政法</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>刑事系</th>
+                                    <td>刑法</td>
+                                    <td>刑訴法</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>筆者は今年2回目試験sの一般教養科目の選択は数学(線形代数学の対角行列)、生物(レセプターとPeg10遺伝子)、化学(原子量計算)、地学(表面温度を元にした恒星と太陽の大きさ関係)、英語、社会科学(法哲学、法史学)、文章理解(演繹帰納)を選択した。地学と英語が苦手と判明(去年より酷かった)。</p>
+                </section>
+
+            </main>
+        </div>
+        <div id="aside-subject">
+            <aside>
+                <h1>科目変更</h1>
+                <div class="topic" id="targetTopic">
+
+                    <h2>トピック</h2>
+
+                    <a href="./a.html">法律科目</a>
+                    <a href="./b.html">選択科目</a>
+
+
+                </div>
+                <div class="buttons">
+                    <a href="#" id="resetButton">トピックのサイズに元に戻す</a>
+                </div>
+
+            </aside>
+
+        </div>
+        <div id="aside-note">
+            <aside>
+                <div class="note-display">
+                    <h3>Note</h3>
+                </div>
+                <div>
+                    <p class="NOTE_title">一時的なメモ用</p>
+                </div>
+                <div class="note-input">
+                    <label for="note"></label>
+                    <textarea id="note" rows="20" cols="30">
+・ページ移動の際は、積極的にご活用ください。
+
+・「text保存」はご自身のクリップボードにテキストを保存します。
+
+・「削除」はこのボード内のテキストを削除します。
+                    </textarea>
+                </div>
+                <div class="note-actions">
+                    <button id="copy-button">text保存</button>
+                    <p>&nbsp;</p>
+                    <button id="clear-button">削除</button>
+                </div>
+                <div>
+                    <p>[見返し]</p>
+                    <p id="note-content">--保存後に表示--*再表示不可</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+<footer>
+    Copyright&copy; Sato, All Rights Reserved.
+</footer>
+
+<script src="./js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./js/jquery.js"></script>
+
+</html>

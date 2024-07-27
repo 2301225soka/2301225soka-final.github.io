@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* container全体の位置ともろもろ ...*/
+.container-main {
+    display: grid;
+    background-image: url('../media/back.png');
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 94px 318px auto 128px;
+    column-gap: 5%;
+    row-gap: 5%;
+    grid-template-areas:
+        "header-AREA header-AREA"
+        "main-AREA Subject-AREA"
+        "main-AREA Note-AREA"
+    ;
+    border: 15px solid transparent;
+    border-image: url('../media/grass.png') 30 round;
+    border-image-slice: 30;
+}
+
+/* 各containerの内容 */
+#header-container {
+    grid-area: header-AREA;
+    background-color: green;
+    text-align: center;
+}
+
+#main-container {
+    grid-area: main-AREA;
+    background-color: green;
+    border-radius: 5px;
+    padding: 15px;
+    border: 6px ridge black ;
+
+
+}
+
+#aside-subject {
+    grid-area: Subject-AREA;
+    background-color: aqua;
+    padding: 10px;
+    border: 6px ridge blue ;
+
+}
+
+#aside-note {
+    grid-area: Note-AREA;
+    background-color: violet;
+    border: 6px ridge orange;
+    padding: 5px;
+}
+
+/* 以下、asideノート欄 */
+.note-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 25px;
+    max-width: 400px;
+}
+
+.note-input,
+.note-display,
+.note-actions {
+    display: flex;
+    flex-direction: row;
+}
+
+#note {
+    width: 95%;
+    box-sizing: border-box;
+    background-color: #00552e;
+    font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN";
+    color: white;
+    border-radius: 25px;
+    padding-top: 2em;
+}
+
+#copy-button,
+#clear-button {
+    align-self: flex-start;
+    padding: 5px 10px;
+    background: linear-gradient(#FFF, hsl(61, 82%, 68%));
+    border-color: yellow;
+}
+
+.note-display {
+    color: blue;
+}
+
+.NOTE_title {
+    text-align: center;
+}
+
+
+/* ヘッダーの編集 */
+
+
+#main-title {
+    margin: 0;
+    font-size: 30px;
+    font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN";
+    color: #ff5722;
+    text-shadow: 0 4px 4px yellow, 0 0px 1px yellowgreen;
+    text-decoration: none;
+}
+
+/* ヘッダーバー等 */
+#ti {
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid royalblue;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #cf8600, #f4f7b6);
+    text-decoration: none;
+}
+
+#li-1 {
+    text-align: left;
+    list-style: none;
+}
+.ti {
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid royalblue;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #cf8600, #f4f7b6);
+    text-decoration: none;
+}
+.unfind {
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid royalblue;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #cf8600, #f4f7b6);
+    text-decoration: none;
+}
+
+/* トピックのズーム */
+.topic {
+    margin: 50px;
+    border: 2px solid black;
+    padding: 0px;
+    transition: transform 0.5s ease; 
+}
+.buttons {
+    margin-bottom: 20px;
+}
+#zoomButton {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+
+/* 図のやつ */
+.table-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+table {
+    border-collapse: collapse;
+    width: 45%;
+    margin: 10px;
+}
+th, td {
+    border: 1px solid greenyellow;
+    padding: 8px;
+    text-align: center;
+}
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
